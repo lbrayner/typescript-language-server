@@ -84,7 +84,7 @@ export class LspClientLogger implements Logger {
             }).join(' ');
 
             this.client.logMessage({
-                type: severity,
+                type: lsp.MessageType.Error,
                 message: message,
             });
         }
